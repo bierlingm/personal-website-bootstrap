@@ -12,7 +12,7 @@
 
     <body>
         <!-- Header & nav bar -->
-        <header>
+        <header class="container">
             <ul class="nav row mx-auto mb-2 bg-light">
                 <h3 class="nav-item mt-4 mb-2 col-12 text-center text-primary">Moritz Bierling</h3>
                 <li class="nav-item m-2 text-center text-secondary col">Skills</li>
@@ -23,12 +23,19 @@
         </header>
             
         <main>
+
             <!-- Intro view -->
-            <div class="row mx-auto bg-secondary" style="background-image: url('/images/moritz_bierling_headshot.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; height: auto">
-                <p class="mx-auto text-center">
-                    TL;DR I build beautiful websites and prepare organizations for the distributed web.
-                </p>
-            </div>
+            <stage>
+                <div class="container-md">
+                    <div class="row m-auto bg-light">
+                        <img src="/images/moritz_bierling_headshot.jpg" alt="Moritz Bierling at laptop" class="img-fluid">
+                        <p class="mx-auto col text-center">
+                            TL;DR I build beautiful websites and prepare organizations for the distributed web.
+                        </p>
+                    </div>
+                </div>
+            </stage>
+
             <!-- Skill section -->
             <div class="row mx-auto bg-success">
                 <div class="col">
@@ -57,6 +64,7 @@
                     </p>
                 </div>
             </div>
+
             <!-- Contact section -->
             <div class="row mx-auto bg-danger">
                 <p class="col">
@@ -69,6 +77,7 @@
                     Email me at <a href="mailto:author@moritzbierling.com">author@moritzbierling.com</a>
                 </p>
             </div>
+
             <!-- Links section -->
             <div class="row mx-auto bg-warning">
                 <p class="col">
@@ -84,6 +93,7 @@
                     Twitter https://twitter.com/bierlingm
                 </p>
             </div>
+
             <!-- Bio section -->
             <div class="row mx-auto bg-info">
                 <p class="col bg-danger">
@@ -126,6 +136,7 @@
                         2020    Web Development Bootcamp @ neue fische
                     </p>
             </div>
+            
             <!-- Footer -->
             <footer class="row bg-primary">
                 <p class="col ml-5">&copy; 2020 Moritz Bierling</p>
