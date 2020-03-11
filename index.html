@@ -11,16 +11,27 @@
     </head>
 
     <body>
+        
         <!-- Header & nav bar -->
-        <header class="container">
-            <ul class="nav row mx-auto mb-2 bg-light">
-                <h3 class="nav-item mt-4 mb-2 col-12 text-center text-primary">Moritz Bierling</h3>
-                <li class="nav-item m-2 text-center text-secondary col">Skills</li>
-                <li class="nav-item m-2 text-center text-secondary col">Contact</li>
-                <li class="nav-item m-2 text-center text-secondary col">Links</li>
-                <li class="nav-item m-2 text-center text-secondary col">Bio</li>
-            </ul>
-        </header>
+            <header>
+                <ul class="nav row mx-auto mb-2 bg-light">
+                    <li class="nav-item mt-4 mb-2 col-12 btn text-center text-primary">
+                        <a href="#">Moritz Bierling</a>
+                    </li>
+                    <li class="nav-item col btn text-center text-secondary">
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item col btn text-center text-secondary">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item col btn text-center text-secondary">
+                        <a href="#links">Links</a>
+                    </li>
+                    <li class="nav-item col btn text-center text-secondary">
+                        <a href="#bio">Bio</a>
+                    </li>
+                </ul>
+            </header>
             
         <main>
 
@@ -28,7 +39,7 @@
             <stage>
                 <div class="container-md">
                     <div class="row m-auto bg-light">
-                        <img src="/images/moritz_bierling_headshot.jpg" alt="Moritz Bierling at laptop" class="img-fluid">
+                        <img src="/images/moritz_bierling_headshot.jpg" alt="Moritz Bierling at laptop" class="mx-auto my-3 col-12 img-fluid">
                         <p class="mx-auto col text-center">
                             TL;DR I build beautiful websites and prepare organizations for the distributed web.
                         </p>
@@ -36,107 +47,119 @@
                 </div>
             </stage>
 
-            <!-- Skill section -->
-            <div class="row mx-auto bg-success">
-                <div class="col">
-                    <p>
-                        Skills
-                    </p>
+            <!-- Skills section -->
+            <section id="skills">
+                <div class="container">
+                    <div class="card mx-md-auto my-md-3 text-center bg-success">
+                        <div class="card-header text-light">
+                            Skills
+                        </div>
+                        <div class="card-body">
+                            <ul class="card-text">
+                                <li>
+                                    Web Dev
+                                </li>
+                                <li>
+                                    Research
+                                </li>
+                                <li>
+                                    Strategy
+                                </li>
+                                <li>
+                                    Speaking
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                    <p>
-                        Frontend Engineering
-                    </p>
-                </div>
-                <div class="col">
-                    <p>
-                        Research
-                    </p>
-                </div>
-                <div class="col">
-                    <p>
-                        Strategy
-                    </p>
-                </div>
-                <div class="col">
-                    <p>
-                        Speaking
-                    </p>
-                </div>
-            </div>
+            </section>
 
             <!-- Contact section -->
-            <div class="row mx-auto bg-danger">
-                <p class="col">
-                    Contact
-                </p>
-                <p class="col">
-                    Call me at <a href="tel:+49-1590-538-5522">01590 538 5522</a>
-                </p>
-                <p class="col">
-                    Email me at <a href="mailto:author@moritzbierling.com">author@moritzbierling.com</a>
-                </p>
-            </div>
+            <section id="contact">
+                <div class="container">
+                    <div class="card mx-auto my-md-3 bg-danger">
+                        <div class="card-header">
+                            Contact
+                        </div>
+                        <ul class="card-body">
+                            <li class="card-text">
+                                Call me at <a href="tel:+49-1590-538-5522">01590 538 5522</a>
+                            </li>
+                            <li class="card-text">
+                                Email me at <a href="mailto:author@moritzbierling.com">author@moritzbierling.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
             <!-- Links section -->
-            <div class="row mx-auto bg-warning">
-                <p class="col">
-                    Links
-                </p>
-                <p class="col">
-                    GitHub https://github.com/bierlingm
-                </p>
-                <p class="col">
-                    LinkedIn https://linkedin.com/in/moritzbierling
-                </p>
-                <p class="col">
-                    Twitter https://twitter.com/bierlingm
-                </p>
-            </div>
+            <section id="links">
+                <div class="container">
+                    <div class="card mx-auto my-md-3 bg-warning">
+                        <div class="col">
+                            Links
+                        </div>
+                        <ul class="card-body">
+                            <li class="card-text">
+                                GitHub https://github.com/bierlingm
+                            </li>
+                            <li class="card-text">
+                                LinkedIn https://linkedin.com/in/moritzbierling
+                            </li>
+                            <li class="card-text">
+                                Twitter https://twitter.com/bierlingm
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
             <!-- Bio section -->
-            <div class="row mx-auto bg-info">
-                <p class="col bg-danger">
-                    Bio
-                </p>
-                <p class="m-auto">
-                    My work centers on emerging technologies and alternative education. I have organized tech and entrepreneurship bootcamps, written white papers, taught career development to Erasmus+ students, and more. I'm currently learning web development also.
-                </p>
-                    <p class="col">
-                        2011    Abitur (German baccalaureate)
+            <section id="bio">
+                <div class="row mx-auto bg-info">
+                    <p class="col bg-danger">
+                        Bio
                     </p>
-                    <p class="col">
-                        2012    German Voluntary Service
+                    <p class="m-auto">
+                        My work centers on emerging technologies and alternative education. I have organized tech and entrepreneurship bootcamps, written white papers, taught career development to Erasmus+ students, and more. I'm currently learning web development also.
                     </p>
-                    <p class="col">
-                        2012-13 Philosophy & Economics @ University Bayreuth
-                    </p>
-                    <p class="col">
-                        2013-14 Maritime Management @ Hamburg School of Business Administration, with corporate partner TUI Cruises
-                    </p>
-                    <p class="col">
-                        2014    Hydra Entrepreneurship Bootcamp
-                    </p>
-                    <p class="col">
-                        2014-17 Various positions @ Exosphere LLC
-                    </p>
-                    <p class="col">
-                        2017    Blockchain Reporter @ Neufund (Fifth Force GmbH)
-                    </p>
-                    <p class="col">
-                        2017-20 Solopreneur @ Existential Ventures OÜ
-                    </p>
-                    <p class="col">
-                        2018-20 Contractor @ Holo Ltd
-                    </p>
-                    <p class="col">
-                        2019    Organizer @ Volta retreats
-                    </p>
-                    <p class="col">
-                        2020    Web Development Bootcamp @ neue fische
-                    </p>
-            </div>
-            
+                        <p class="col">
+                            2011    Abitur (German baccalaureate)
+                        </p>
+                        <p class="col">
+                            2012    German Voluntary Service
+                        </p>
+                        <p class="col">
+                            2012-13 Philosophy & Economics @ University Bayreuth
+                        </p>
+                        <p class="col">
+                            2013-14 Maritime Management @ Hamburg School of Business Administration, with corporate partner TUI Cruises
+                        </p>
+                        <p class="col">
+                            2014    Hydra Entrepreneurship Bootcamp
+                        </p>
+                        <p class="col">
+                            2014-17 Various positions @ Exosphere LLC
+                        </p>
+                        <p class="col">
+                            2017    Blockchain Reporter @ Neufund (Fifth Force GmbH)
+                        </p>
+                        <p class="col">
+                            2017-20 Solopreneur @ Existential Ventures OÜ
+                        </p>
+                        <p class="col">
+                            2018-20 Contractor @ Holo Ltd
+                        </p>
+                        <p class="col">
+                            2019    Organizer @ Volta retreats
+                        </p>
+                        <p class="col">
+                            2020    Web Development Bootcamp @ neue fische
+                        </p>
+                </div>
+            </section>
+
             <!-- Footer -->
             <footer class="row bg-primary">
                 <p class="col ml-5">&copy; 2020 Moritz Bierling</p>
